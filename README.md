@@ -4,7 +4,7 @@ In this Data Engineering project I have worked upon the Apple-Sales data so to a
 
 So in this project i have made the ETL pipelines in which -
 
-Extraction with the help of DBFS(Databricks File System  ) in which i have stored the files of apple-sales data in the format of Delta , Parquet and CSV.
+**Extraction** with the help of DBFS(Databricks File System  ) in which i have stored the files of apple-sales data in the format of Delta , Parquet and CSV.
 For this to happen i have made the Extractor_Notebook in which iam extracting the data from the dbfs also with the help of reader_factory iam reading the format of file sp that only that foramt appear which
 I need at particular time.
 
