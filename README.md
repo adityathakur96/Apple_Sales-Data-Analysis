@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/149991b1-959d-4842-87e9-a678566bfde1)# Apple_Sales-Data-Analysis
+# Apple_Sales-Data-Analysis
 
 In this Data Engineering project I have worked upon the Apple-Sales data so to acquire some useful information which will give information about the buisness of Apples.*
 
