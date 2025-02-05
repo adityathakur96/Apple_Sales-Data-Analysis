@@ -23,3 +23,9 @@ For this I have created the Tranformation_Notebook in that all the transformatio
 **LOADING** of the results is also done with the help of DBFS , for this i have made the Loader_Factory by which again format of file is identified and Loader_Notebook by which the all the resulted data is going to DBFS. 
 The format of the loading files are Delta lake and Data Lake. 
 
+
+**Note: **
+* : This project only have imaginary data of the sales it's not real.
+**: I'll be making these pipelines in future and work on this project timely to learn more.
+
+
