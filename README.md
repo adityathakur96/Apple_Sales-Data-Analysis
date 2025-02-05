@@ -26,6 +26,7 @@ The format of the loading files are Delta lake and Data Lake.
 
 **Note: **
 * : This project only have imaginary data of the sales it's not real.
+
 **: I'll be making these pipelines in future and work on this project timely to learn more.
 
 
