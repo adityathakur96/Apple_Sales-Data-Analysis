@@ -8,6 +8,7 @@ The project follows a classic ETL pipeline architecture—Extraction, Transforma
 🔧 ETL Pipeline Breakdown
 
 1️⃣ Extraction
+
 -> Platform: Databricks File System (DBFS)
 
 -> File Formats Used: Delta, Parquet, CSV
@@ -17,6 +18,7 @@ The project follows a classic ETL pipeline architecture—Extraction, Transforma
 -> To dynamically manage file formats, I implemented a Reader_Factory, which detects and reads only the required format at runtime, enhancing modularity and control.
 
 2️⃣ Transformation
+
 -> Technology: PySpark (running on Databricks, powered by Apache Spark)
 
 -> I used a combination of SparkSQL and DataFrame transformations to extract insights from the data.
@@ -36,6 +38,7 @@ The project follows a classic ETL pipeline architecture—Extraction, Transforma
 -> Top 3 selling products in each category by total revenue
 
 3️⃣ Loading
+
 -> Platform: DBFS
 
 -> I implemented a Loader_Factory to dynamically identify file formats for saving.
@@ -43,6 +46,7 @@ The project follows a classic ETL pipeline architecture—Extraction, Transforma
 -> All final output data is written back to DBFS using the Loader_Notebook in Delta Lake and Data Lake formats for durability and scalability.
 
 🚧 Note
+
 -> This project uses fictional Apple sales data for educational purposes only.
 
 -> I plan to extend and refine these ETL pipelines in the future to include features like orchestration, scheduling, and data validation for deeper learning.
