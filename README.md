@@ -1,32 +1,51 @@
 # Apple_Sales-Data-Analysis
 
-In this Data Engineering project I have worked upon the Apple-Sales data so to acquire some useful information which will give information about the buisness of Apples.*
+📌 Project Overview
+In this Data Engineering project, I worked on Apple Sales data to extract meaningful business insights that reflect customer purchasing behavior and product performance. Although the dataset is imaginary, it has been designed to simulate real-world business scenarios for learning purposes.
 
-So in this project i have made the ETL pipelines in which -
+The project follows a classic ETL pipeline architecture—Extraction, Transformation, and Loading—implemented using Databricks, Apache Spark, and PySpark.
 
-**EXTRACTION** with the help of DBFS(Databricks File System  ) in which i have stored the files of apple-sales data in the format of Delta , Parquet and CSV.
-For this to happen i have made the Extractor_Notebook in which iam extracting the data from the dbfs also with the help of reader_factory iam reading the format of file sp that only that foramt appear which
-I need at particular time.
+🔧 ETL Pipeline Breakdown
+1️⃣ Extraction
+-> Platform: Databricks File System (DBFS)
 
-**TRANSFORMATION** with the help of Databricks which built upon Apache Spark , so I have used the Pyspark as i medium to write the code on databricks by which i have made so transformations using SparkSQL and also other concepts of spark. 
-by which iam getting useful result on the sales data, like some of the pipelines are
+-> File Formats Used: Delta, Parquet, CSV
 
-1) Customer who have brought Airpods After buying the IPhone.
-2) Customer who have brought both the Airpods and IPhone.
-3) List of all the products brought by customer after their initial purchase.**
-4) Determine the average time delay for buying an Iphone and buying Airpods for each customer.**
-5) Identify the top 3 selling products inn each category by total revenue.**
+-> I developed an Extractor_Notebook that handles data ingestion from DBFS.
 
-For this I have created the Tranformation_Notebook in that all the transformation is done.
+-> To dynamically manage file formats, I implemented a Reader_Factory, which detects and reads only the required format at runtime, enhancing modularity and control.
+
+2️⃣ Transformation
+-> Technology: PySpark (running on Databricks, powered by Apache Spark)
+
+-> I used a combination of SparkSQL and DataFrame transformations to extract insights from the data.
+
+-> All transformation logic resides in the Transformation_Notebook.
+
+-> Key transformation pipelines include:
+
+-> Customers who purchased AirPods after buying an iPhone
+
+-> Customers who purchased both AirPods and iPhone
+
+-> List of all products bought by a customer after their initial purchase
+
+-> Average time delay between buying an iPhone and then AirPods for each customer
+
+-> Top 3 selling products in each category by total revenue
+
+3️⃣ Loading
+-> Platform: DBFS
+
+-> I implemented a Loader_Factory to dynamically identify file formats for saving.
+
+-> All final output data is written back to DBFS using the Loader_Notebook in Delta Lake and Data Lake formats for durability and scalability.
+
+🚧 Note
+-> This project uses fictional Apple sales data for educational purposes only.
+
+-> I plan to extend and refine these ETL pipelines in the future to include features like orchestration, scheduling, and data validation for deeper learning.
 
 
-**LOADING** of the results is also done with the help of DBFS , for this i have made the Loader_Factory by which again format of file is identified and Loader_Notebook by which the all the resulted data is going to DBFS. 
-The format of the loading files are Delta lake and Data Lake. 
-
-
-**Note: **
-*  *- This project only have imaginary data of the sales it's not real.
-
-* **- I'll be making these pipelines in future and work on this project timely to learn more.
 
 
