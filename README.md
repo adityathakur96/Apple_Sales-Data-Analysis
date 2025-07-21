@@ -6,6 +6,7 @@ In this Data Engineering project, I worked on Apple Sales data to extract meanin
 The project follows a classic ETL pipeline architecture—Extraction, Transformation, and Loading—implemented using Databricks, Apache Spark, and PySpark.
 
 🔧 ETL Pipeline Breakdown
+
 1️⃣ Extraction
 -> Platform: Databricks File System (DBFS)
 
