@@ -49,7 +49,7 @@ The project follows a classic ETL pipeline architecture—Extraction, Transforma
 
 🚧 Note
 
--> This project uses fictional Apple sales data for educational purposes only.
+-> This project uses fictional Apple sales data for learning spark and building project only.
 
 -> I plan to extend and refine these ETL pipelines in the future to include features like orchestration, scheduling, and data validation for deeper learning.
 
