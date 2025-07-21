@@ -1,4 +1,4 @@
-# Apple_Sales-Data-Analysis
+# Apple_Sales-Data-Engineering-Project
 
 📌 Project Overview
 
@@ -6,6 +6,20 @@ This Data Engineering project is about working on Apple Sales data to extract me
 
 
 The project follows a classic ETL pipeline architecture—Extraction, Transformation, and Loading—implemented using Databricks, Apache Spark, and PySpark.
+
+
+📁 Dataset Overview
+
+The project uses three datasets to analyze Apple product sales:
+
+-> Customer.csv – Contains customer details like ID, name, gender, age, and region.
+
+-> Products.csv – Includes product information such as ID, name, category (e.g., iPhone, MacBook), and price.
+
+-> Transactions.csv – Records sales transactions, linking customers and products along with date, quantity, and revenue.
+
+These datasets together enable insights into customer behavior, product performance, and overall sales trends.
+
 
 🔧 ETL Pipeline Breakdown
 
