@@ -1,7 +1,9 @@
 # Apple_Sales-Data-Analysis
 
 📌 Project Overview
+
 In this Data Engineering project, I worked on Apple Sales data to extract meaningful business insights that reflect customer purchasing behavior and product performance. Although the dataset is imaginary, it has been designed to simulate real-world business scenarios for learning purposes.
+
 
 The project follows a classic ETL pipeline architecture—Extraction, Transformation, and Loading—implemented using Databricks, Apache Spark, and PySpark.
 
