@@ -74,7 +74,8 @@ Together, these datasets enable analysis of:
 
 ## 🤝 **Contributions & Feedback**
 
-Ideas, suggestions, or feedback? **Feel free to raise an issue or connect for collaboration!**
+Have suggestions or want to collaborate? **Open to feedback and improvements.**  
+Feel free to raise an issue or [connect with me on LinkedIn](https://www.linkedin.com/in/adityathakur9617/)!
 
 ---
 
