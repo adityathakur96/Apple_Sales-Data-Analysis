@@ -1,72 +1,85 @@
-# Apple_Sales-Data-Engineering-Project
+# 🍏 **Apple Sales Data Engineering Project**
 
-📌 Project Overview
+---
 
-This Data Engineering project is about working on Apple Sales data to extract meaningful business insights that reflect customer purchasing behavior and product performance. Although the dataset is imaginary, it has been designed to simulate real-world business scenarios for learning purposes.
+## 📌 **Project Overview**
 
+Welcome to the **Apple Sales Data Engineering Project** — an end-to-end ETL pipeline created to extract meaningful business insights from simulated Apple sales data. While the dataset is **imaginary**, it is crafted to reflect real-world business scenarios and customer behaviors, making it ideal for **learning and prototyping**.
 
-The project follows a classic ETL pipeline architecture—Extraction, Transformation, and Loading—implemented using Databricks, Apache Spark, and PySpark.
+---
 
+## 🏗️ **ETL Pipeline Architecture**
 
-📁 Dataset Overview
+This project implements a classic **ETL (Extract, Transform, Load)** architecture using:
 
-The project uses three datasets to analyze Apple product sales:
+- **Databricks**
+- **Apache Spark**
+- **PySpark**
 
--> Customer.csv – Contains customer details like ID, name, gender, age, and region.
+---
 
--> Products.csv – Includes product information such as ID, name, category (e.g., iPhone, MacBook), and price.
+## 📁 **Dataset Overview**
 
--> Transactions.csv – Records sales transactions, linking customers and products along with date, quantity, and revenue.
+Three core datasets drive the analytic insights:
 
-These datasets together enable insights into customer behavior, product performance, and overall sales trends.
+- **Customer.csv** – Customer ID, name, gender, age, and region
+- **Products.csv** – Product ID, name, category (e.g., iPhone, MacBook), and price
+- **Transactions.csv** – Records each sale, linking customer & product with date, quantity, and revenue
 
+Together, these datasets enable analysis of:
 
-🔧 ETL Pipeline Breakdown
+- Customer purchasing behavior
+- Product performance
+- Overall sales trends
 
-1️⃣ Extraction
+---
 
--> Platform: Databricks File System (DBFS)
+## 🔧 **ETL Pipeline Breakdown**
 
--> File Formats Used: Delta, Parquet, CSV
+### 1️⃣ **Extraction**
 
--> I developed an Extractor_Notebook that handles data ingestion from DBFS.
+- **Platform:** Databricks File System (DBFS)
+- **File Formats Used:** Delta, Parquet, CSV
+- **Extractor_Notebook:** Handles all data ingestion from DBFS
+- **Reader_Factory:** Dynamically detects and ingests files in the required format at runtime for maximum modularity and control
 
--> To dynamically manage file formats, I implemented a Reader_Factory, which detects and reads only the required format at runtime, enhancing modularity and control.
+### 2️⃣ **Transformation**
 
-2️⃣ Transformation
+- **Technology:** PySpark on Databricks (Apache Spark)
+- **Transformation_Notebook:** Contains all business logic and DataFrame/SparkSQL transformations
+- **Key Analytics Pipelines:**
+    - Customers who purchased **AirPods after buying an iPhone**
+    - Customers who purchased **both AirPods and iPhone**
+    - List of **all products bought by a customer after their initial purchase**
+    - **Average time delay** between buying an iPhone and then AirPods (per customer)
+    - **Top 3 selling products** in each category by total revenue
 
--> Technology: PySpark (running on Databricks, powered by Apache Spark)
+### 3️⃣ **Loading**
 
--> I used a combination of SparkSQL and DataFrame transformations to extract insights from the data.
+- **Platform:** DBFS
+- **Loader_Factory:** Dynamically identifies file format for saving
+- **Loader_Notebook:** Writes final output data back to DBFS using **Delta Lake** and **Data Lake** formats for durability & scalability
 
--> All transformation logic resides in the Transformation_Notebook.
+---
 
--> Key transformation pipelines include:
+## 🚧 **Notes & Future Enhancements**
 
--> Customers who purchased AirPods after buying an iPhone
+- This project utilizes **fictional Apple sales data** strictly for educational purposes and Spark learning.
+- **Planned extensions** include:
+    - Workflow orchestration & scheduling
+    - Automated data validation
+    - Deeper business intelligence features
 
--> Customers who purchased both AirPods and iPhone
+---
 
--> List of all products bought by a customer after their initial purchase
+## 🤝 **Contributions & Feedback**
 
--> Average time delay between buying an iPhone and then AirPods for each customer
+Ideas, suggestions, or feedback? **Feel free to raise an issue or connect for collaboration!**
 
--> Top 3 selling products in each category by total revenue
+---
 
-3️⃣ Loading
+## 📌 **Disclaimer**
 
--> Platform: DBFS
+All data is **synthetic** and intended **solely for learning and prototyping**. Not for commercial or production use.
 
--> I implemented a Loader_Factory to dynamically identify file formats for saving.
-
--> All final output data is written back to DBFS using the Loader_Notebook in Delta Lake and Data Lake formats for durability and scalability.
-
-🚧 Note
-
--> This project uses fictional Apple sales data for learning spark and building project only.
-
--> I plan to extend and refine these ETL pipelines in the future to include features like orchestration, scheduling, and data validation for deeper learning.
-
-
-
-
+---
